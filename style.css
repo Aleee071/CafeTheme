@@ -1244,6 +1244,26 @@ footer h3 {
     .form1 {
         width: auto;
     }
+    
+    input[type="date"]:before{
+    color:white;
+    content:attr(placeholder);
+    }
+
+    input[type="date"].full:before {
+    color:black;
+    content:""!important;
+    }
+
+    input[type="time"]:before{
+    color:white;
+    content:attr(placeholder);  
+    }
+
+    input[type="time"].full:before {
+    color:white;
+    content:""!important;
+    }
 
     .container-sec4 {
         padding: 80px 10px;
