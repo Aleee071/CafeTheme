@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Great Vibes' rel='stylesheet'>
+    <title>Coffee Blend</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container-navbar">
+            <div class="nav-bar">
+                <div style="padding: 20px 0px;">
+                    <p class="brand">COFFEE</p>
+                    <p class="brand-small">BLEND</p>
+                </div>
+
+                <div class="hamburger" style="display: none;">
+                    <button onclick="sidebar_toggle()"><i class="fa fa-bars"></i></button>
+                    <span style="font-family: 'Poppins'; letter-spacing: 2px; vertical-align: bottom;">MENU</span>
+                </div>
+
+                <ul class="nav-opts">
+                    <li style="color: #c49b63;">HOME</li>
+                    <li>MENU</li>
+                    <li>SERVICES</li>
+                    <li>BLOG</li>
+                    <li>ABOUT</li>
+                    <li class="shop-anchor" style="position: relative;">SHOP &nbsp;<i class="fa fa-caret-down"></i>
+                        <ul class="sublist">
+                            <li>Shop</li>
+                            <li>Single Product</li>
+                            <li>Cart</li>
+                            <li>Checkout</li>
+                        </ul>
+                    </li>
+                    <li>CONTACT</li>
+                    <li style="position: relative;">
+                        <i class="fa fa-cart-shopping"></i>
+                        <i style="position: absolute;" class="fa fa-circle-dot"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <aside class="sidebar" id="aside" style="display: none;">
+        <ul class="nav-opts aside-nav-opts">
+            <li style="color: #c49b63;">HOME</li>
+            <li>MENU</li>
+            <li>SERVICES</li>
+            <li>BLOG</li>
+            <li>ABOUT</li>
+            <li class="shop-anchor aside-shop-anchor" style="position: relative;">SHOP &nbsp;<i
+                    class="fa fa-caret-down"></i>
+                <ul class="sublist aside-sublist">
+                    <li>Shop</li>
+                    <li>Single Product</li>
+                    <li>Cart</li>
+                    <li>Checkout</li>
+                </ul>
+            </li>
+            <li>CONTACT</li>
+            <li style="position: relative;">
+                <i class="fa fa-cart-shopping"></i>
+                <i style="position: absolute;" class="fa fa-circle-dot"></i>
+            </li>
+        </ul>
+    </aside>
+
+    <section style="background-color: black;">
+        <section class="slideshow-sec" id="slide1" style="display: block;">
+            <div class="subsec-slideshow">
+                <div class="slideshow-sec-container">
+                    <div style="text-align: center;">
+                        <header>Welcome</header>
+                        <h1>CREAMY HOT AND READY TO SERVE</h1>
+                        <p class="slideshow-sec-text">A small river named Duden flows by their place and supplies it
+                            with the necessary regelialia.</p>
+                        <button class="slideshow-sec-btn">Order Now</button>
+                        <button class="slideshow-sec-btn2">View Menu</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="slide2" class="slideshow-sec" style="display: none;">
+            <div class="subsec-slideshow">
+                <div class="slideshow-sec-container">
+                    <div style="text-align: center;">
+                        <header>Welcome</header>
+                        <h1>CREAMY HOT AND READY TO SERVE</h1>
+                        <p class="slideshow-sec-text">A small river named Duden flows by their place and supplies it
+                            with the necessary regelialia.</p>
+                        <button class="slideshow-sec-btn">Order Now</button>
+                        <button class="slideshow-sec-btn2">View Menu</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="sec-2">
+            <div class="container-sec-2">
+                <div class="sec-2-grid">
+                    <div class="sec-2-txt">
+                        <i class="fa fa-phone"></i>
+                        <p class="sec-2-paras">000 (123) 456 7890</p>
+                        <p class="info-para-sec-2">A small river named Duden flows by their place and supplies.</p>
+                    </div>
+
+                    <div class="sec-2-txt">
+                        <i class="fa fa-location"></i>
+                        <p class="sec-2-paras">198 West 21th Street</p>
+                        <p class="info-para-sec-2">203 Fake St. Mountain View, San Francisco, California, USA</p>
+                    </div>
+
+                    <div class="sec-2-txt" style="row-gap: 0px;">
+                        <i class="fa fa-clock"></i>
+                        <p class="sec-2-paras">Open Monday-Friday</p>
+                        <p class="info-para-sec-2">8:00am - 9:00pm</p>
+                    </div>
+                </div>
+            </div>
+
+            <form class="form1">
+                <h3 style="padding-bottom: 20px;">BOOK A TABLE</h3>
+                <div class="form-grid">
+                    <input type="text" placeholder="First Name">
+                    <input style="grid-area: 1/2;" type="text" placeholder="Last Name">
+                    <div class="form-further-grid" style="display: grid; column-gap: 10px; grid-template-columns: repeat(3, 1fr);     grid-area: 2/1/span 1/ span 2;
+                ">
+                        <input type="date" style="color: white; font-size: 14px;">
+                        <input type="time" style="color: white; font-size: 14px;">
+                        <input style="grid-area: 1/2;" type="text" placeholder="Phone">
+                    </div>
+
+                    <input type="text" placeholder="Message">
+                    <button class="form-btn">Appointment</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="sec-3">
+            <div class="sec-3-container">
+                <div class="sec-3-grid">
+                    <div style="overflow: hidden;">
+                        <img class="sec-3-img" src="images/sec-3-img.webp" alt="">
+                    </div>
+                    <div class="sec-3-overlap">
+                        <h3 class="header-overlap">Discover</h3>
+                        <h1 class="subheader-overlap">OUR STORY</h1>
+                        <p class="overlap-para">On her way she met a copy. The copy warned the Little Blind Text, that
+                            where it came from it would have been rewritten a thousand times and everything that was
+                            left from its origin would be the word "and" and the Little Blind Text should turn around
+                            and return to its own, safe country. But nothing the copy said could convince her and so it
+                            didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe
+                            and Parole and dragged her into their agency, where they abused her for their.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec-4">
+            <div class="container-sec4">
+                <div class="sec-4-grid">
+                    <span>
+                        <img class="img-1-sec4" src="images/to-do-list.png" alt="">
+                        <h4 class="sec4-img-header">EASY TO ORDER</h4>
+                        <p class="sec-4-txt">Even the all-powerful Pointing has no control about the blind texts it is
+                            an almost unorthographic.</p>
+                    </span>
+                    <span>
+                        <img class="img-2-sec4" src="images/delivery-truck.png" alt="">
+                        <h4 class="sec4-img-header">FASTEST DELIVERY</h4>
+                        <p class="sec-4-txt">Even the all-powerful Pointing has no control about the blind texts it is
+                            an almost unorthographic.</p>
+                    </span>
+                    <span>
+                        <img class="img-3-sec3" src="images/coffee-beans.png" alt="">
+                        <h4 class="sec4-img-header">QUALITY COFFEE</h4>
+                        <p class="sec-4-txt">Even the all-powerful Pointing has no control about the blind texts it is
+                            an almost unorthographic.</p>
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec-5">
+            <div class="container-sec5">
+                <div class="sec-5-grid">
+                    <div class="sec-5-header" style="text-align: end; padding-top: 140px;">
+                        <h3 class="header-overlap">Discover</h3>
+                        <h1 style="grid-area: 1/1" class="subheader-overlap">OUR MENU</h1>
+                        <p class="sec-5-txt sec-4-txt">Far far away, behind the word mountains, far from the countries
+                            Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
+                            right at the coast of the Semantics, a large language ocean.</p>
+                        <button class="sec-5-btn">VIEW FULL MENU</button>
+                    </div>
+
+                    <div class="sec-5-img-grid">
+                        <img class="sec-5-img" src="images/menu-1.jpg.webp" alt="">
+                        <img style="padding-top: 30px;" class="sec-5-img" src="images/menu-2.jpg.webp" alt="">
+                        <img class="sec-5-img" src="images/menu-3.jpg.webp" alt="">
+                        <img style="padding-top: 30px;" class="sec-5-img" src="images/menu-4.jpg.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="counter-sec">
+            <div class="sub-counter-sec">
+                <div class="container-counter-sec">
+                    <div class="counter-icons-grid">
+                        <div class="icon1-counter icon-counter">
+                            <i class="fa fa-coffee"></i>
+                            <p class="data-target" id="count1" value="100">0</p>
+                            <p class="further-info-counter">Coffee Branches</p>
+                        </div>
+
+                        <div class="icon2-counter icon-counter">
+                            <i class="fa fa-coffee"></i>
+                            <p class="data-target" id="count2" value="85">0</p>
+                            <p class="further-info-counter">Number of Awards</p>
+                        </div>
+
+                        <div class="icon3-counter icon-counter">
+                            <i class="fa fa-coffee"></i>
+                            <p class="data-target" id="count3" value="2500">0</p>
+                            <p class="further-info-counter">Happy Customers</p>
+                        </div>
+
+                        <div class="icon-counter">
+                            <i class="fa fa-coffee"></i>
+                            <p class="data-target" id="count4" value="900">0</p>
+                            <p class="further-info-counter">Staff</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="best-coffees">
+            <div class="best-coffee-container">
+                <h3 class="header-overlap">Discover</h3>
+                <h1 class="subheader-overlap">BEST COFFEE SELLERS</h1>
+                <p class="sec-5-txt sec-4-txt sec-coffee-resp"
+                    style="width: 55%; margin-left: 23%; line-height: 1.8; margin-bottom: 100px;">Far far away, behind
+                    the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                <div class="best-coffees-grid">
+                    <div class="coffee-1">
+                        <img class="sec-5-img coffee-sec-img" src="images/menu-1.jpg.webp" alt="coffee-1">
+                        <h3 class="coffees-header">COFFEE CAPUCCINO</h3>
+                        <p class="sec-5-txt sec-4-txt best-coffees-para" style="line-height: 1.8;">A small river named
+                            Duden flows by their place and supplies</p>
+                        <h3 class="subheader-overlap price-coffee">$5.90</h3>
+                        <button class="sec-5-btn best-coffees-btn">Add to Cart</button>
+                    </div>
+
+                    <div class="coffee-2">
+                        <img class="sec-5-img coffee-sec-img" src="images/menu-2.jpg.webp" alt="coffee-2">
+                        <h3 class="coffees-header">COFFEE CAPUCCINO</h3>
+                        <p class="sec-5-txt sec-4-txt best-coffees-para">A small river named Duden flows by their place
+                            and supplies</p>
+                        <h3 class="subheader-overlap price-coffee">$5.90</h3>
+                        <button class="sec-5-btn best-coffees-btn">Add to Cart</button>
+                    </div>
+
+                    <div class="coffee-3">
+                        <img class="sec-5-img coffee-sec-img" src="images/menu-3.jpg.webp" alt="coffee-3">
+                        <h3 class="coffees-header">COFFEE CAPUCCINO</h3>
+                        <p class="sec-5-txt sec-4-txt best-coffees-para" style="line-height: 1.8;">A small river named
+                            Duden flows by their place and supplies</p>
+                        <h3 class="subheader-overlap price-coffee">$5.90</h3>
+                        <button class="sec-5-btn best-coffees-btn">Add to Cart</button>
+                    </div>
+
+                    <div class="coffee-4">
+                        <img class="sec-5-img coffee-sec-img" src="images/menu-4.jpg.webp" alt="coffee-4">
+                        <h3 class="coffees-header">COFFEE CAPUCCINO</h3>
+                        <p class="sec-5-txt sec-4-txt best-coffees-para" style="line-height: 1.8;">A small river named
+                            Duden flows by their place and supplies</p>
+                        <h3 class="subheader-overlap price-coffee">$5.90</h3>
+                        <button class="sec-5-btn best-coffees-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-sec">
+            <div class="gallery-grid">
+                <div style="position: relative;">
+                    <img class="gallery-img" src="images/gallery-1.jpg.webp" alt="">
+                    <i class="fa fa-search"></i>
+                </div>
+                <img class="gallery-img" src="images/gallery-2.jpg.webp" alt="">
+                <img class="gallery-img" src="images/gallery-3.jpg.webp" alt="">
+                <img class="gallery-img" src="images/gallery-4.jpg.webp" alt="">
+            </div>
+        </section>
+
+        <section class="products-sec">
+            <div class="products-container">
+                <h3 class="header-overlap">Discover</h3>
+                <h1 class="subheader-overlap">OUR PRODUCTS</h1>
+                <p class="sec-5-txt sec-4-txt sec-coffee-resp"
+                    style="width: 55%; margin-left: 23%; line-height: 1.8; font-size: 16px; margin-bottom: 100px;">Far
+                    far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
+                    blind texts.</p>
+                <button class="products-btn" id="product-btn1" style="background-color: #c49b63; color: black;"
+                    onclick="main_dish_onclick()">Main Dish</button>
+                <button class="products-btn" id="product-btn2" onclick="drinks_onclick()">Drinks</button>
+                <button class="products-btn" id="product-btn3" onclick="desserts_onclick()">Desserts</button>
+
+                <div class="main-dish-grid" id="main-dish-grid" style="display: grid;">
+                    <div class="dish1 dish">
+                        <img class="sec-5-img" src="images/dish-1.jpg.webp" height="55%" alt="dish1">
+                        <h3 class="coffees-header">GRILLED BEEF</h3>
+                        <p class="sec-4-txt sec-5-txt best-coffees-para">Far far away, behind the word mountains, far
+                            from the countries Vokalia and Consonantia.</p>
+                        <h3 class="subheader-overlap price-coffee">$5.90</h3>
+                        <button class="sec-5-btn best-coffees-btn">Add to Cart</button>
+                    </div>
+                    <div class="dish2 dish">
+                        <img class="sec-5-img" src="images/dish-2.jpg.webp" height="55%" alt="dish2">
+                        <h3 class="coffees-header">GRILLED BEEF</h3>
+                        <p class="sec-4-txt sec-5-txt best-coffees-para">Far far away, behind the word mountains, far
+                            from the countries Vokalia and Consonantia.</p>
+                        <h3 class="subheader-overlap price-coffee">$4.20</h3>
+                        <button class="sec-5-btn best-coffees-btn">Add to Cart</button>
+                    </div>
+                    <div class="dish3 dish">
+                        <img class="sec-5-img" src="images/dish-3.jpg.webp" height="55%" alt="dish3">
+                        <h3 class="coffees-header">GRILLED BEEF</h3>
+                        <p class="sec-4-txt sec-5-txt best-coffees-para">Far far away, behind the word mountains, far
+                            from the countries Vokalia and Consonantia.</p>
+                        <h3 class="subheader-overlap price-coffee">$10.30</h3>
+                        <button class="sec-5-btn best-coffees-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="drinks-grid" id="drinks-grid" style="display: none;">
+                    <div class="drink1 drinks">
+                        <img class="sec-5-img" src="images/drink-1.jpg.webp" height="65%" alt="dish1">
+                        <h3 class="coffees-header">LEMONADE</h3>
+                        <p class="sec-4-txt sec-5-txt best-coffees-para">Far far away, behind the word mountains, far
+                            from the countries Vokalia and Consonantia.</p>
+                        <h3 class="subheader-overlap price-coffee">$5.90</h3>
+                        <button class="sec-5-btn best-coffees-btn">Add to Cart</button>
+                    </div>
+                    <div class="drink2 drinks">
+                        <img class="sec-5-img" src="images/drink-2.jpg.webp" height="65%" alt="dish2">
+                        <h3 class="coffees-header">PINEAPPLE JUICE</h3>
+                        <p class="sec-4-txt sec-5-txt best-coffees-para">Far far away, behind the word mountains, far
+                            from the countries Vokalia and Consonantia.</p>
+                        <h3 class="subheader-overlap price-coffee">$4.20</h3>
+                        <button class="sec-5-btn best-coffees-btn">Add to Cart</button>
+                    </div>
+                    <div class="drink3 drinks">
+                        <img class="sec-5-img" src="images/drink-3.jpg.webp" height="65%" alt="dish3">
+                        <h3 class="coffees-header">SODA DRINKS</h3>
+                        <p class="sec-4-txt sec-5-txt best-coffees-para">Far far away, behind the word mountains, far
+                            from the countries Vokalia and Consonantia.</p>
+                        <h3 class="subheader-overlap price-coffee">$10.30</h3>
+                        <button class="sec-5-btn best-coffees-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="desserts-grid" id="desserts-grid" style="display: none;">
+                    <div class="dessert1 desserts">
+                        <img class="sec-5-img" src="images/dessert-1.jpg.webp" height="60%" alt="dish1">
+                        <h3 class="coffees-header">HOT CAKE HONEY</h3>
+                        <p class="sec-4-txt sec-5-txt best-coffees-para">Far far away, behind the word mountains, far
+                            from the countries Vokalia and Consonantia.</p>
+                        <h3 class="subheader-overlap price-coffee">$5.90</h3>
+                        <button class="sec-5-btn best-coffees-btn">Add to Cart</button>
+                    </div>
+                    <div class="dessert2 desserts">
+                        <img class="sec-5-img" src="images/dessert-2.jpg.webp" height="60%" alt="dish2">
+                        <h3 class="coffees-header">HOT CAKE HONEY</h3>
+                        <p class="sec-4-txt sec-5-txt best-coffees-para">Far far away, behind the word mountains, far
+                            from the countries Vokalia and Consonantia.</p>
+                        <h3 class="subheader-overlap price-coffee">$4.20</h3>
+                        <button class="sec-5-btn best-coffees-btn">Add to Cart</button>
+                    </div>
+                    <div class="dessert3 desserts">
+                        <img class="sec-5-img" src="images/dessert-3.jpg.webp" height="60%" alt="dish3">
+                        <h3 class="coffees-header">HOT CAKE HONEY</h3>
+                        <p class="sec-4-txt sec-5-txt best-coffees-para">Far far away, behind the word mountains, far
+                            from the countries Vokalia and Consonantia.</p>
+                        <h3 class="subheader-overlap price-coffee">$10.30</h3>
+                        <button class="sec-5-btn best-coffees-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimony-sec">
+            <section class="overlap-testimonySec">
+                <div class="container-testimony">
+                    <h3 class="header-overlap" style="text-align: center;">Testimony</h3>
+                    <h1 class="subheader-overlap">CUSTOMERS SAYS</h1>
+                    <p class="sec-5-txt sec-4-txt sec-coffee-resp testimony-text-resp"
+                        style="width: 53%; margin-left: 24%; line-height: 1.8; font-size: 16px; margin-bottom: 100px;">
+                        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                        live the blind texts.</p>
+                    <div class="testimony-grid">
+                        <div class="customer">
+                            <p class="testimony-txt">“Even the all-powerful Pointing has no control about the blind
+                                texts it is an almost unorthographic life One day however a small.”</p>
+                            <div class="customer-grid">
+                                <img class="testimony-img" src="images/person_3.jpg.webp" alt="">
+                                <div style="padding: 0px 0px; display: inline-block;">
+                                    <p class="testimony-txt">Louise Kelly</p>
+                                    <span class="customer-profession">Illustrator Designer</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="customer-2" style="background-color: #b48f5b !important;">
+                            <p class="testimony-txt">“Even the all-powerful Pointing has no control about the blind
+                                texts it is an almost unorthographic life One day however a small line of blind text by
+                                the name of Lorem Ipsum decided to leave for the far World of Grammar.”</p>
+                            <div class="customer-grid" style="background-color: #b48f5b !important;">
+                                <img class="testimony-img" src="images/person_2.jpg.webp" alt="">
+                                <div
+                                    style="padding: 0px 0px; display: inline-block; background-color: #b48f5b !important;">
+                                    <p class="testimony-txt">Louise Kelly</p>
+                                    <span class="customer-profession">Illustrator Designer</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="customer3">
+                            <p class="testimony-txt">“Even the all-powerful Pointing has no control about the blind
+                                texts it is an almost unorthographic life One day however a small line of blind text by
+                                the name. ”</p>
+                            <div class="customer-grid">
+                                <img class="testimony-img" src="images/person_3.jpg.webp" alt="">
+                                <div style="padding: 0px 0px; display: inline-block;">
+                                    <p class="testimony-txt">Louise Kelly</p>
+                                    <span class="customer-profession">Illustrator Designer</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="customer" style="background-color: #b48f5b;">
+                            <p class="testimony-txt">“Even the all-powerful Pointing has no control about the blind
+                                texts it is an almost unorthographic life One day however a small.”</p>
+                            <div class="customer-grid" style="background-color: #b48f5b;">
+                                <img class="testimony-img" src="images/person_2.jpg.webp" alt="">
+                                <div style="padding: 0px 0px; display: inline-block; background-color: #b48f5b;">
+                                    <p class="testimony-txt">Louise Kelly</p>
+                                    <span class="customer-profession">Illustrator Designer</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="customer3">
+                            <p class="testimony-txt">“Even the all-powerful Pointing has no control about the blind
+                                texts it is an almost unorthographic life One day however a small line of blind text by
+                                the name.”</p>
+                            <div class="customer-grid">
+                                <img class="testimony-img" src="images/person_3.jpg.webp" alt="">
+                                <div style="padding: 0px 0px; display: inline-block;">
+                                    <p class="testimony-txt">Louise Kelly</p>
+                                    <span class="customer-profession">Illustrator Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="blog-sec">
+            <div class="blog-container">
+                <h1 class="blog-header">RECENT FROM BLOG</h1>
+                <h1 class="sec-4-txt sec-5-txt sec-coffee-resp"
+                    style="width: 53%; font-weight: 100; margin-left: 24%; line-height: 1.8; font-size: 16px; margin-bottom: 100px;">
+                    Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+                    the blind texts.</h1>
+                <div class="blog-grid">
+                    <div class="blog">
+                        <div class="blog1-grid">
+                            <img src="images/image_1.jpg.webp" alt="image">
+                            <div class="blog-details">
+                                <span>Sept 10, 2018</span>
+                                <span>Admin &nbsp;<i class="fa fa-message"></i>3</span>
+                            </div>
+                            <p class="blog-title">The Delicious Pizza</p>
+                            <p class="blog-txt">A small river named Duden flows by their place and supplies it with the
+                                necessary regelialia.</p>
+                        </div>
+                    </div>
+
+                    <div class="blog">
+                        <div class="blog1-grid">
+                            <img class="blog-img2" src="images/image_2.jpg.webp" alt="image">
+                            <div class="blog-details">
+                                <span>Sept 10, 2018</span>
+                                <span>Admin &nbsp;<i class="fa fa-message"></i>3</span>
+                            </div>
+                            <p class="blog-title">The Delicious Pizza</p>
+                            <p class="blog-txt">A small river named Duden flows by their place and supplies it with the
+                                necessary regelialia.</p>
+                        </div>
+                    </div>
+
+                    <div class="blog">
+                        <div class="blog1-grid">
+                            <img class="blog-img3" src="images/image_3.jpg.webp" alt="image">
+                            <div class="blog-details">
+                                <span>Sept 10, 2018</span>
+                                <span>Admin &nbsp;<i class="fa fa-message"></i>3</span>
+                            </div>
+                            <p class="blog-title">The Delicious Pizza</p>
+                            <p class="blog-txt">A small river named Duden flows by their place and supplies it with the
+                                necessary regelialia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-end">
+            <div class="form-end-container">
+                <form class="form1 form1-end">
+                    <h3 style="padding-bottom: 20px;">BOOK A TABLE</h3>
+                    <div class="form-grid form-end-grid">
+                        <input type="text" placeholder="First Name">
+                        <input style="grid-area: 1/2;" type="text" placeholder="Last Name">
+                        <div class="form-end-grid-further" style="display: grid; column-gap: 10px; grid-template-columns: repeat(3, 1fr);     grid-area: 2/1/span 1/ span 2;
+                    ">
+                            <input type="date" style="color: white; font-size: 14px;">
+                            <input type="time" style="color: white; font-size: 14px;">
+                            <input style="grid-area: 1/2;" type="text" placeholder="Phone">
+                        </div>
+
+                        <input type="text" placeholder="Message">
+                        <button class="form-btn form-btn-end">Appointment</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-grid">
+                    <div class="f-column1">
+                        <h3>ABOUT US</h3>
+                        <p class="f-col-1-txt">Far far away, behind the word mountains, far from the countries Vokalia
+                            and Consonantia, there live the blind texts.</p>
+                        <div class="footer-social-icons">
+                            <img class="Twitter" src="images/icons8-twitter-48.png" alt="Twitter">
+                            <img class="insta" src="images/icons8-instagram-48.png" alt="instagram">
+                            <img class="fb" src="images/icons8-facebook-48.png" alt="FB">
+                        </div>
+                    </div>
+
+                    <div class="f-column2">
+                        <h3>RECENT BLOG</h3>
+                        <div class="f-blog">
+                            <img class="f-blog1-img" src="images/image_1.jpg.webp" alt="">
+                            <div>
+                                <span class="f-blog-txt">
+                                    Even the all-powerful Pointing has no control about</span>
+                                <span class="f-blog-details"><i class="fa fa-calendar-alt"></i>Sept 15, 2018</span>
+                                <span class="f-blog-details"><i class="fa fa-person"></i>Admin</span>
+                                <span class="f-blog-details"><i class="fa fa-sms"></i>19</span>
+                            </div>
+                        </div>
+                        <div class="f-blog">
+                            <img class="f-blog1-img" src="images/image_2.jpg.webp" alt="">
+                            <div>
+                                <span class="f-blog-txt">
+                                    Even the all-powerful Pointing has no control about</span>
+                                <span class="f-blog-details"><i class="fa fa-calendar-alt"></i>Sept 15, 2018</span>
+                                <span class="f-blog-details"><i class="fa fa-person"></i>Admin</span>
+                                <span class="f-blog-details"><i class="fa fa-sms"></i>19</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="f-column3">
+                        <h3>SERVICES</h3>
+                        <ul style="list-style: none;">
+                            <li>Cooked</li>
+                            <li>Deliver</li>
+                            <li>Quality Foods</li>
+                            <li>Mixed</li>
+                        </ul>
+                    </div>
+
+                    <div class="f-column4">
+                        <h3>HAVE A QUESTIONS?</h3>
+                        <div class="f-col4-grid">
+                            <i style="margin-top: 6px;" class="fa fa-map-location-dot"></i>
+                            <span style="color: #FFFFFFB3; font-family: Poppins, sans-serif;">203 Fake St. Mountain
+                                View, San Francisco, California, USA</span>
+                        </div>
+
+                        <div class="f-col4-grid">
+                            <i style="margin-top: 6px;" class="fa fa-phone"></i>
+                            <p style="color: white; font-family: Poppins, sans-serif; margin-top: 2px;">+2 392 3929 210
+                            </p>
+                        </div>
+
+                        <div class="f-col4-grid" style="margin-top: 25px;">
+                            <i style="margin-top: 6px;" class="fa fa-envelope"></i>
+                            <p style="color: white; font-family: Poppins, sans-serif; margin-top: 2px;">
+                                info@yourdomain.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <script>
+            const img1 = document.getElementById("slide1");
+            const img2 = document.getElementById("slide2");
+            function slideshow() {
+                if (img1.style.display == 'none') {
+                    img1.style.display = 'block';
+                    img1.classList.add("animation");
+                }
+                else if (img1.style.display == 'block') {
+                    img1.style.display = 'none';
+                    img1.classList.remove("animation");
+                }
+
+                if (img2.style.display == 'none') {
+                    img2.style.display = 'block';
+                    img2.classList.add("animation");
+                }
+                else if (img2.style.display == "block") {
+                    img2.style.display = 'none';
+                    img2.classList.remove("animation");
+                }
+            }
+            setInterval(slideshow, 5000);
+
+            let main_grid = document.getElementById("main-dish-grid");
+            let drinks_grid = document.getElementById("drinks-grid");
+            let desserts_grid = document.getElementById("desserts-grid");
+            let productBtn1 = document.getElementById("product-btn1");
+            let productBtn2 = document.getElementById("product-btn2");
+            let productBtn3 = document.getElementById("product-btn3");
+
+
+            function main_dish_onclick() {
+                if (main_grid.style.display == "none") {
+                    main_grid.style.display = "grid";
+                    drinks_grid.style.display = "none";
+                    desserts_grid.style.display = "none";
+                    productBtn1.style.backgroundColor = "#c49b63";
+                    productBtn1.style.color = "black";
+                    productBtn2.style.backgroundColor = "transparent";
+                    productBtn2.style.color = "#c49b63";
+                    productBtn3.style.backgroundColor = "transparent";
+                    productBtn3.style.color = "#c49b63";
+                }
+            }
+
+            function drinks_onclick() {
+                if (drinks_grid.style.display == "none") {
+                    drinks_grid.style.display = "grid";
+                    main_grid.style.display = "none";
+                    desserts_grid.style.display = "none";
+                    productBtn2.style.backgroundColor = "#c49b63";
+                    productBtn2.style.color = "black"
+                    productBtn1.style.backgroundColor = "transparent";
+                    productBtn1.style.color = "#c49b63";
+                    productBtn3.style.backgroundColor = "transparent";
+                    productBtn3.style.color = "#c49b63";
+                }
+            }
+
+            function desserts_onclick() {
+                if (desserts_grid.style.display == "none") {
+                    desserts_grid.style.display = "grid";
+                    drinks_grid.style.display = "none";
+                    main_grid.style.display = "none";
+                    productBtn3.style.backgroundColor = "#c49b63";
+                    productBtn3.style.color = "black";
+                    productBtn1.style.backgroundColor = "transparent";
+                    productBtn1.style.color = "#c49b63";
+                    productBtn2.style.backgroundColor = "transparent";
+                    productBtn2.style.color = "#c49b63";
+                }
+            }
+
+            function sidebar_toggle() {
+                const aside = document.getElementById("aside");
+                if (aside.style.display == 'block') {
+                    aside.style.display = 'none';
+                } else {
+                    aside.style.display = 'block';
+                }
+            }
+
+            function updatecount1() {
+                let counter1 = document.getElementById("count1");
+                var innertext = counter1.innerText;
+                const target = counter1.getAttribute('value');
+                let add = 1;
+                var innertext = parseInt(innertext);
+
+                innertext += add;
+                counter1.innerText = innertext
+
+                if (counter1.innerText != target) {
+                    setTimeout(updatecount1, 30);
+                }
+                else {
+                    clearTimeout(updatecount1);
+                }
+            }
+            updatecount1();
+
+            function updatecount2() {
+                let counter1 = document.getElementById("count2");
+                var innertext = counter1.innerText;
+                const target = counter1.getAttribute('value');
+                let add = 1;
+                var innertext = parseInt(innertext);
+
+                innertext += add;
+                counter1.innerText = innertext
+
+                if (counter1.innerText != target) {
+                    setTimeout(updatecount2, 30);
+                }
+                else {
+                    clearTimeout(updatecount2);
+                }
+            }
+            updatecount2();
+
+            function updatecount3() {
+                let counter1 = document.getElementById("count3");
+                var innertext = counter1.innerText;
+                const target = counter1.getAttribute('value');
+                let add = 10;
+                var innertext = parseInt(innertext);
+
+                innertext += add;
+                counter1.innerText = innertext
+
+                if (counter1.innerText != target) {
+                    setTimeout(updatecount3, 5);
+                }
+                else {
+                    clearTimeout(updatecount3);
+                }
+            }
+            updatecount3();
+
+            function updatecount4() {
+                let counter1 = document.getElementById("count4");
+                var innertext = counter1.innerText;
+                const target = counter1.getAttribute('value');
+                let add = 5;
+                var innertext = parseInt(innertext);
+
+                innertext += add;
+                counter1.innerText = innertext
+
+                if (counter1.innerText != target) {
+                    setTimeout(updatecount4, 10);
+                }
+                else {
+                    clearTimeout(updatecount4);
+                }
+            }
+            updatecount4();
+        </script>
+
+
+
+</body>
+
+</html>
